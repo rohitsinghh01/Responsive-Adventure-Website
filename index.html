@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/bfc87244b9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bfc87244b9.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/Images/logo.png" type="image/x-icon">
     <title>Adventure</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <h1 class="logo">ADVENTURE</h1>
-        <ul class="nav">
-            <li class="active"><a href="#"></a>Home</li>
-            <li><a href="#"></a>Tours</li>
-            <li><a href="#"></a>Explore</li>
-            <li><a href="#"></a>About</li>
-            <li class="ctn"><a href="#"></a>Contact</li>
-        </ul>
-  <img src="./Images/menu button.jpg" alt="" class="menu-btn">
-    </nav> 
+      <h1 class="logo">ADVENTURE</h1>
+      <ul class="nav">
+        <li class="active"><a href="#"></a>Home</li>
+        <li><a href="#tour">Tours</a></li>
+        <li><a href="#explores">Explore</a></li>
+        <li><a href="#event">Events</a></li>
+        <li><a href="#contact"  class="ctn">Contact</a></li>
+      </ul>
+      <img src="./Images/menu button.jpg" alt="" class="menu-btn" />
+    </nav>
 
     <header>
-        <div class="header-content">
-            <h2>Explorer the Colourful World</h2>
-            <div class="line"></div>
-            <h1>A WONDERFUL GIFT</h1>
-            <a href="#" class="ctn">Learn More</a>
-        </div>
+      <div class="header-content">
+        <h2>Explorer the Colourful World</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT</h1>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
     </header>
 
+    <section class="events" id="event">
+      <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./Images/trekking.jpg" alt="" />
+          <h4>Everest Camp Trek</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            aliquid quidem, minus eveniet maxime nisi.
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
 
-    <section class="events">
-        
+        <div class="col">
+          <img src="./Images/walking.jpg" alt="" />
+          <h4>Walking Holidays</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            aliquid quidem, minus eveniet maxime nisi.
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explores">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod sequi ad dolore ducimus ab doloribus suscipit? Dicta suscipit perspiciatis sunt ducimus quam obcaecati voluptatem!
+        </p>
+
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+<section class="tours" id="tour">
+    <div class="row">
+        <div class="col content-col">
+            <h1>UPCOMING TOURS AND DESTINATION</h1>
+            <div class="line"></div>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi repellendus illum exercitationem expedita neque necessitatibus, omnis enim atque, quae dignissimos nulla odio voluptatibus quaerat voluptas.</P>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+
+        <div class="col image-col">
+            <div class="images">
+                <img src="./Images/camping.jpg" alt="">
+                <img src="./Images/desert.jpg" alt="">
+                <img src="./Images/mountain.jpg" alt="">
+                <img src="./Images/waterfall.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="footer" id="contact">
+        <p>123 Fifth Avenue, NY 10160, New York,USA | Phone: 800-829-123 | Email: contact@gmail.com</p>
+        <p>Copyright ©️ Rohit</p>
     </section>
 
     <script>
-        const menuBtn=document.querySelector('.menu-btn')
-        const nav=document.querySelector('.nav')
-        menuBtn.addEventListener('click',()=>{
-            nav.classList.toggle('mobile-menu')
-        })
+      const menuBtn = document.querySelector(".menu-btn");
+      const nav = document.querySelector(".nav");
+      menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("mobile-menu");
+      });
     </script>
-</body>
+  </body>
 </html>
