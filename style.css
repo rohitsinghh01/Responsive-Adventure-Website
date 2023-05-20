@@ -21,7 +21,7 @@ ul {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("/Images/background.jpg");
+  background-image: url("./Images/background.jpg");
   background-position: bottom;
   background-size: cover;
   display: flex;
