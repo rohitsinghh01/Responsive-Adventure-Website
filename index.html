@@ -1,115 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/bfc87244b9.js"
-      crossorigin="anonymous"
-    ></script>
-    
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/Images/logo.png" type="image/x-icon">
-    <title>Adventure</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <h1 class="logo">ADVENTURE</h1>
-      <ul class="nav">
-        <li class="active"><a href="#"></a>Home</li>
-        <li><a href="#tour">Tours</a></li>
-        <li><a href="#explores">Explore</a></li>
-        <li><a href="#event">Events</a></li>
-        <li><a href="#contact"  class="ctn">Contact</a></li>
-      </ul>
-      <img src="./Images/menu button.jpg" alt="" class="menu-btn" />
-    </nav>
 
-    <header>
-      <div class="header-content">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/bfc87244b9.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/Images/logo.png" type="image/x-icon">
+  <title>Adventure</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1 class="logo">ADVENTURE</h1>
+    <ul class="nav">
+      <li class="active"><a href="#"></a>Home</li>
+      <li><a href="#tour">Tours</a></li>
+      <li><a href="#explores">Explore</a></li>
+      <li><a href="#event">Events</a></li>
+      <li><a href="#contact" class="ctn">Contact</a></li>
+    </ul>
+    <img src="./Images/menu button.jpg" alt="" class="menu-btn" />
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <div data-aos="fade-right" data-aos-delay="700">
         <h2>Explorer the Colourful World</h2>
         <div class="line"></div>
-        <h1>A WONDERFUL GIFT</h1>
-        <a href="#" class="ctn">Learn More</a>
       </div>
-    </header>
-
-    <section class="events" id="event">
-      <div class="title">
-        <h1>Upcoming Events</h1>
-        <div class="line"></div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="./Images/trekking.jpg" alt="" />
-          <h4>Everest Camp Trek</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            aliquid quidem, minus eveniet maxime nisi.
-          </p>
-          <a href="#" class="ctn">Learn More</a>
-        </div>
-
-        <div class="col">
-          <img src="./Images/walking.jpg" alt="" />
-          <h4>Walking Holidays</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            aliquid quidem, minus eveniet maxime nisi.
-          </p>
-          <a href="#" class="ctn">Learn More</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="explore" id="explores">
-      <div class="explore-content">
-        <h1>EXPLORE THE WORLD</h1>
-        <div class="line"></div>
-        <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod sequi ad dolore ducimus ab doloribus suscipit? Dicta suscipit perspiciatis sunt ducimus quam obcaecati voluptatem!
-        </p>
-
-        <a href="#" class="ctn">Learn More</a>
-      </div>
-    </section>
-
-<section class="tours" id="tour">
-    <div class="row">
-        <div class="col content-col">
-            <h1>UPCOMING TOURS AND DESTINATION</h1>
-            <div class="line"></div>
-            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi repellendus illum exercitationem expedita neque necessitatibus, omnis enim atque, quae dignissimos nulla odio voluptatibus quaerat voluptas.</P>
-            <a href="#" class="ctn">Learn More</a>
-        </div>
-
-        <div class="col image-col">
-            <div class="images">
-                <img src="./Images/camping.jpg" alt="">
-                <img src="./Images/desert.jpg" alt="">
-                <img src="./Images/mountain.jpg" alt="">
-                <img src="./Images/waterfall.jpg" alt="">
-            </div>
-        </div>
+      <h1 data-aos="fade-up">A WONDERFUL GIFT</h1>
+      <a href="#" class="ctn">Learn More</a>
     </div>
-</section>
+  </header>
 
-    <section class="footer" id="contact">
-        <p>123 Fifth Avenue, NY 10160, New York,USA | Phone: 800-829-123 | Email: contact@gmail.com</p>
-        <p>© 2023, Made By Rohit</p>
-    </section>
+  <section class="events" id="event">
+    <div class="title">
+      <div data-aos="zoom-in">
+        <h1>Upcoming Events</h1>
+      </div>
+      <div class="line" data-aos="zoom-right"></div>
+    </div>
+    <div class="row">
+      <div class="col" data-aos="fade-right" data-aos-delay="500">
+        <img src="./Images/trekking.jpg" alt="" />
+        <h4>Everest Camp Trek</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          aliquid quidem, minus eveniet maxime nisi.
+        </p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
 
-    <script>
-      const menuBtn = document.querySelector(".menu-btn");
-      const nav = document.querySelector(".nav");
-      menuBtn.addEventListener("click", () => {
-        nav.classList.toggle("mobile-menu");
-      });
-    </script>
-  </body>
+      <div class="col" data-aos="fade-left" data-aos-delay="700">
+        <img src="./Images/walking.jpg" alt="" />
+        <h4>Walking Holidays</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          aliquid quidem, minus eveniet maxime nisi.
+        </p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore" id="explores" data-aos="zoom-out-up" data-aos-delay="800">
+    <div class="explore-content" data-aos="zoom-out-up" data-aos-delay="900">
+      <h1>EXPLORE THE WORLD</h1>
+      <div class="line"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod sequi ad dolore ducimus ab doloribus
+        suscipit? Dicta suscipit perspiciatis sunt ducimus quam obcaecati voluptatem!
+      </p>
+
+      <a href="#" class="ctn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="tours" id="tour">
+    <div class="row">
+      <div class="col content-col" data-aos="fade-right" data-aos-delay="300">
+        <h1>UPCOMING TOURS AND DESTINATION</h1>
+        <div class="line"></div>
+        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi repellendus illum exercitationem expedita
+          neque necessitatibus, omnis enim atque, quae dignissimos nulla odio voluptatibus quaerat voluptas.</P>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+
+      <div class="col image-col">
+        <div class="images">
+          <div data-aos="flip-right" data-aos-delay="500">
+            <img src="./Images/camping.jpg" alt="">
+          </div>
+          <div data-aos="flip-left" data-aos-delay="600">
+            <img src="./Images/desert.jpg" alt="">
+          </div>
+          <div data-aos="flip-left" data-aos-delay="700">
+            <img src="./Images/mountain.jpg" alt="">
+          </div>
+          <div data-aos="flip-right" data-aos-delay="800">
+            <img src="./Images/waterfall.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="contact">
+    <p>123 Fifth Avenue, NY 10160, New York,USA | Phone: 800-829-123 | Email: contact@gmail.com</p>
+    <p>© 2023, Made By Rohit</p>
+  </section>
+
+  <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const nav = document.querySelector(".nav");
+    menuBtn.addEventListener("click", () => {
+      nav.classList.toggle("mobile-menu");
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+    });
+  </script>
+</body>
+
 </html>
